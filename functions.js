@@ -10,9 +10,15 @@ function includes(item, array){
     }
 }
 
-function indexOf(item, array) {
 
+function indexOf(item, array) {
+    for(let o = 0; o < array.length; o++) {
+        if(array[o] === item){
+            return o;
+        } 
+    }
 }
+
 
 function reverse(array) {
     var placeholder = new Array;
@@ -20,4 +26,16 @@ function reverse(array) {
         placeholder.push(array[e]);
     }
     return placeholder;
+}
+
+
+function slice(start, stop, array) {
+
+}
+
+function concat(array1, array2) {
+    for(let p = 0; p < array2.length; p++) {
+        array1.push(array2[p])
+    }
+    return;
 }
