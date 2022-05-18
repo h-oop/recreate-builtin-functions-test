@@ -35,7 +35,11 @@ function slice(start, stop, array) {
 
 function concat(array1, array2) {
     for(let p = 0; p < array2.length; p++) {
-        array1.push(array2[p])
+        array1.push(array2[p]);
     }
     return;
+}
+
+function join(sep, array) {
+    return arr.reduce((str, a)=> {return a+separator+str})
 }
