@@ -2,12 +2,12 @@
 
 function includes(item, array){
     for (let i = 0; i < array.length; i++) {
-        if (array[i] == item) {
+        if (array[i] = item) {
             return true;
-        } else {
-            return false;
         }
+
     }
+    return false;
 }
 
 
@@ -30,7 +30,11 @@ function reverse(array) {
 
 
 function slice(start, stop, array) {
-
+    var placeholder = new Array;
+    for(let x = start; x < stop; x++) {
+        placeholder.push(array[x]);
+    }
+    return placeholder;
 }
 
 function concat(array1, array2) {
@@ -41,5 +45,9 @@ function concat(array1, array2) {
 }
 
 function join(sep, array) {
-    return arr.reduce((str, a)=> {return a+separator+str})
+
+}
+
+function max(array) { 
+
 }
