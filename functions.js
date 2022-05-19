@@ -5,7 +5,6 @@ function includes(item, array){
         if (array[i] = item) {
             return true;
         }
-
     }
     return false;
 }
@@ -17,6 +16,7 @@ function indexOf(item, array) {
             return o;
         } 
     }
+    return -1;
 }
 
 
@@ -38,10 +38,11 @@ function slice(start, stop, array) {
 }
 
 function concat(array1, array2) {
+    var placeholder = array1;
     for(let p = 0; p < array2.length; p++) {
-        array1.push(array2[p]);
+        placeholder.push(array2[p]);
     }
-    return;
+    return placeholder;
 }
 
 function join(sep, array) {
