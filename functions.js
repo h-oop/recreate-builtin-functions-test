@@ -47,11 +47,10 @@ function concat(array1, array2) {
 
 function join(sep, array) {
     var placeholder = new String;
-    placeholder = array[0] + sep;
+    placeholder = array[0];
     for(let v = 1; v < array.length; v++) {
-        placeholder += array[v] += sep;
+        placeholder += sep + array[v];
     }
-    
     return placeholder;
 }
 
