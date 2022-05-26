@@ -2,7 +2,7 @@
 
 function includes(item, array){
     for (let i = 0; i < array.length; i++) {
-        if (array[i] = item) {
+        if (array[i] == item) {
             return true;
         }
     }
@@ -46,9 +46,24 @@ function concat(array1, array2) {
 }
 
 function join(sep, array) {
-
+    var placeholder = new String;
+    placeholder = array[0];
+    for(let v = 1; v < array.length; v++) {
+        if(v = array.length - 1) {
+            placeholder += array[v];
+        } else {
+            placeholder += array[v] += sep;
+        }
+    }
+    return placeholder;
 }
 
 function max(array) { 
-
+    var max = array[0];
+    for(let y = 0; y < array.length; y++) {
+        if (array[y] > max) {
+            var max = array[y];
+        }
+    }
+    return max;
 }
